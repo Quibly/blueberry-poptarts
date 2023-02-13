@@ -49,7 +49,7 @@ function selectTop3(array) {
         let logoContainer = document.createElement('div');
         let logoImage = document.createElement('img');
 
-        logoImage.setAttribute('src', array[i].Logo);
+        logoImage.setAttribute('src', array[i].Logo.slice(1));
         logoImage.setAttribute('alt', array[i].LogoAlt);
         logoImage.setAttribute('loading', 'lazy');
         logoContainer.appendChild(logoImage);
