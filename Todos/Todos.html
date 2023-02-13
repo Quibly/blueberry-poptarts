@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="An app for tracking goals with a dynamic Todo list.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="./css/todos.css">
+    <link rel="shortcut icon" href="../quiblyFavicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Todos</h1>
+        <div id="app">
+        <div id="taskBlock">
+            <div id="topTask">Task List</div>
+            <div id="tasks"></div>
+        </div>
+            <div id="tabs">
+                <p id="remaining"></p>
+                <input type='radio' name="filter" value="all" id="all" checked></input>
+                <label for="all" class="filters">All</label>
+                <input type='radio' name="filter" value="active" id="active"></input>
+                <label for="active" class="filters">Active</label>
+                <input type='radio' name="filter" value="completed" id="completed"></input>
+                <label for="completed" class="filters">Completed</label>
+            </div>
+            <div id="newTask">
+                <input type="text" name="new" id="new" autofocus>
+                <button type="submit" id="newBtn">+</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

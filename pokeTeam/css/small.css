@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1030px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 310px 1fr;
+    }
+
+    #single {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #team {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #filter {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #results {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+}
+
+@media only screen and (max-width: 745px) {
+
+    body {
+        min-width: 370px;
+    }
+
+    #ball2 {
+        display: none;
+        grid-column: unset;
+        width: unset;
+    }
+
+    header  {
+        grid-template-columns: 150px 1fr;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team {
+        padding-bottom: 50px;
+        order: 4;
+    }
+
+    #single {
+        order: 3;
+    }
+
+    #filter {
+        order: 1;
+    }
+
+    #results {
+        order: 2;
+    }
+
+
+
+}
