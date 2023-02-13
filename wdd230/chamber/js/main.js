@@ -26,8 +26,10 @@ let day = now.getDay();
 function bannerCheck() {
     switch (day) {
         case 1:
+            toggleBanner();
             break;
         case 2:
+            toggleBanner();
             break;
         default:
             toggleBanner();

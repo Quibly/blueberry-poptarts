@@ -1,4 +1,4 @@
-let businessURL = '../data/data.json';
+let businessURL = './data/data.json';
 
 fetch(businessURL)
     .then(function (response) {
